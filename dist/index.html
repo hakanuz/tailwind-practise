@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-body overflow-x-hidden">
+    <div class="">
+        <nav class="self-center w-11/12 mx-auto block border-b-2">
+            <div class="flex relative my-4 justify-between">
+                <div class="mr-16">
+                    <h1 class="font-bold text-2xl text-dark md:text-3xl">Food <br><span class="text-primary">delivery</span></h1>
+                </div>
+                <div class="flex justify-end">
+                    <div class="flex self-center border-r-2 pr-6 md:border-r-0 md:pr-0">  
+                        <div class="relative">
+                            <img class="nav-icon" src="../assets/images/bag.png" alt="pic of bag">
+                            <div class="absolute bg-primary right-0 top-0 py-1 px-2 rounded-lg text-white text-sm">4</div>
+                        </div>
+                        <div>
+                            <img class="nav-icon border-2 border-primary" src="../assets/images/user.png" alt="pic of user">
+                        </div>
+                    </div>
+                    <div class="self-center ml-6 md:hidden" id="burger">
+                        <img class="nav-icon" src="../assets/images/menu.png" alt="pic of menu">
+                    </div>
+                </div>
+                    
+            </div>
+            <div class="menu-list self-center justify-end mx-4 hidden my-4 md:flex md:absolute md:top-6 md:right-44 lg:right-52" id="menu">
+                <ul class="md:flex">
+                    <li><a class="m-item" href="#restaurant">Restaurant</a></li>
+                    <li><a class="m-item md:border-r-2 md:pr-4" href="#deals">Deals</a></li>
+                    <li><a class="m-item" href="#my-orders">My Orders</a></li>
+                </ul>
+            </div>      
+        </nav>
+        <section class="self-center w-11/12 mx-auto block my-8">
+            <div class="md:grid md:grid-cols-12 md:gap-6">
+                <div class="md:col-span-4">
+                    <h2 class="text-xl">Settings</h2>
+                    <div class="card">   
+                        <img class="card-img bg-primary" src="../assets/images/profile.png" alt="pic of profile">
+                        <div class="self-center mx-2">
+                            <h3 class="text-dark font-bold">Account</h3>
+                            <p class="text-dark">Personal information</p>
+                        </div>
+                    </div>
+                    <div class="card">   
+                        <img class="card-img bg-bgLight" src="../assets/images/location.png" alt="pic of profile">
+                        <div class="self-center mx-2">
+                            <h3 class="text-dark font-bold">Address</h3>
+                            <p class="text-dark">Shipping addresses</p>
+                        </div>
+                    </div>
+                    <div class="card">   
+                        <img class="card-img bg-bgLight" src="../assets/images/atm-card.png" alt="pic of profile">
+                        <div class="self-center mx-2">
+                            <h3 class="text-dark font-bold">Payment method</h3>
+                            <p class="text-dark">Connected credit cards</p>
+                        </div>
+                    </div>
+                    <div class="card">   
+                        <img class="card-img bg-bgLight" src="../assets/images/security.png" alt="pic of profile">
+                        <div class="self-center mx-2">
+                            <h3 class="text-dark font-bold">Security</h3>
+                            <p class="text-dark">Password, 2FA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:col-span-8">
+                    <h2 class="text-xl">Account</h2>
+                    <div class="p-4 my-4 border-2 rounded-2xl">
+                        <h3 class="text-dark font-bold">Personal Information</h3>
+                        <p class="text-xs mt-4 mb-2 mx-1 text-grayText">Avatar</p>
+                        <div class="flex items-center">
+                            <img class="h-16 w-16 bg-bgLight border-2 border-primary p-2 rounded-2xl" src="../assets/images/user.png" alt="pic of user">
+                            <button class="mx-4 text-primary border-2 border-primary rounded-2xl px-4 h-12 hover:bg-primary hover:text-white" name="Change">Change</button>
+                            <button class="text-darkGray hover:text-red-500" name="Remove">Remove</button>
+                        </div>
+                        <div class="my-4 md:grid md: grid-cols-2 md:gap-4">
+                            <div>
+                                <label class="info-label" for="fName">First Name</label>
+                                <input class="info-input" type="text" name="fName">
+                            </div>
+                            <div>
+                                <label class="info-label" for="lName">Last Name</label>
+                                <input class="info-input" type="text" name="lName">
+                            </div>
+                            <div>
+                                <label class="info-label" for="email">Email</label>
+                                <input class="info-input" type="email" name="email">
+                            </div>
+                            <div>
+                                <label class="info-label" for="pNumber">Phone Number</label>
+                                <input class="info-input" type="text" name="pNumber">
+                            </div>
+      
+                        </div>
+                        <div>
+                            <h3 class="text-dark font-bold mt-16">Email Notification</h3>
+                            <div class="md:grid md:grid-cols-2 md:gap-4">
+                                <div class="form-check my-3">
+                                    <input class="mr-2 h-4 w-4 align-middle"  type="checkbox" name="newDeals" id="">
+                                    <label class="text-dark align-middle" for="newDeals">New Deals</label>
+                                </div>
+                                <div class="form-check my-3">
+                                    <input class="mr-2 h-4 w-4 align-middle"  type="checkbox" name="newRest" id="">
+                                    <label class="text-dark align-middle" for="newRest">New Restaurants</label>
+                                </div>
+                                <div class="form-check my-3">
+                                    <input class="mr-2 h-4 w-4 align-middle"  type="checkbox" name="orderStat" id="">
+                                    <label class="text-dark align-middle" for="orderStat">Order Statuses</label>
+                                </div>
+                                <div class="form-check my-3">
+                                    <input class="mr-2 h-4 w-4 align-middle"  type="checkbox" name="passwordChange" id="">
+                                    <label class="text-dark align-middle" for="passwordChange">Password Changes</label>
+                                </div>
+                                <div class="form-check my-3">
+                                    <input class="mr-2 h-4 w-4 align-middle"  type="checkbox" name="specOffer" id="">
+                                    <label class="text-dark align-middle" for="specOffer">Special Offers</label>
+                                </div>
+                                <div class="form-check my-3">
+                                    <input class="mr-2 h-4 w-4 align-middle"  type="checkbox" name="news" id="">
+                                    <label class="text-dark align-middle" for="news">Newsletter</label>
+                                </div>
+                            </div> 
+                            <div class="md:flex md:justify-between md:border-t-2 md: py-4 md:mt-4">
+                                <div class=" w-full self-center mx-auto mt-10 mb-4 md:w-24 md:m-0">
+                                    <button class="w-full border-2 border-red-500 rounded-xl p-3 text-red-400 font-bold hover:bg-red-500 hover:text-white md:h-12" name="logOut">Log out</button>
+                                </div>
+                                <div class="border-t-2 pt-8 px-6 grid grid-cols-2 gap-6 md:border-0 md:p-0">
+                                    <button class="border-2 rounded-xl p-3 text-darkGray font-bold md:h-12 hover:opacity-90" name="discChanges">Discard Changes</button>
+                                    <button class="rounded-xl bg-primary text-white font-bold md:h-12 hover:opacity-90 name="saveChanges">Save Changes</button>
+                                </div>
+                            </div>                               
+                        </div> 
+
+                    </div>
+                    
+                </div>
+            </div>
+
+        </section>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
